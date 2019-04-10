@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="center">
+            <div class="header-container">
+                <h1 class="dispaly-4 p-none header">ثبت نام در <span class="hdecor">Hdecor</span></h1>
+            </div>
+            <form class="form" id="form">
+                <div class="tow-input">
+                    <div class="input-div mt-2 ml-1">
+                        <input type="text"  class="input-input text-rtl"  id="input-first-name">
+                        <div class="input-text" id="text-first-name">نام</div>
+                    </div>
+                    <div class="input-div mt-2" >
+                        <input type="text" class="input-input text-rtl"  id="input-last-name">
+                        <div class="input-text" id="text-last-name">نام خانوادگی</div>
+                    </div>
+                </div>
+                <!-- date and itme input -->
+                <!-- <div class="input-div mt-2" >
+                    <input type="date" class="input-input text-rtl"  id="input-last-name">
+                    <div class="input-text" id="text-last-name">نام خانوادگی</div>
+                </div> -->
+                <div class="tow-input">
+                    <div class="email">
+                        <div class="input-div mt-2">
+                            <input type="text" class="input-input text-ltr w-100"  id="input-email">
+                            <div class="input-text" id="text-email">ایمیل</div>
+                        </div>
+                    </div>
+                    <div class="tel">
+                        <div class="input-div mt-2">
+                            <input type="text" class="input-input text-ltr w-100"  id="input-tel">
+                            <div class="input-text" id="text-tel">شماره تلفن</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tow-input mt-2">
+                    <div class="input-div " >
+                        <input type="password" class="input-input text-ltr" id="input-pass">
+                        <div class="input-text" id="text-pass" >رمز عبور</div>
+                    </div>
+                    <div class="input-div mx-1" id="input">
+                        <input type="password" class="input-input text-ltr" id="input-pass-re">
+                        <div class="input-text" id="text-pass-re" >تکرار رمز عبور</div>
+                    </div>
+                    <div class="eye ml-0-5">
+                        <a  class="pass-eye" id="pass-eye"><img src="index/eye-closed.png" alt="" ></a>
+                    </div>
+                </div>
+                <p class="password-details">رمز عبور باید حداقل 8 کارکتر باشد، فقط از حروف و اعداد و علامت ها<br> استفاده کنید.</p>
+                <div class="adress">
+                    <div class="input-div mt-1">
+                        <input type="text" class="input-input text-rtl w-100"  id="input-address">
+                        <div class="input-text" id="text-address">آدرس (اختیاری)</div>
+                    </div>
+                </div>
+                <div class="w-100 button-container">
+                    <button type="submit" id="sign-up">ثبت نام</button>
+                </div>
+            </form>
+            <div class="hr"></div>
+            <div class="login-show">
+                قبلا ثبت نام کرده اید؟ 
+                <a href="#">وارد شوید</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/sign-up.js"></script>
+</body>
+</html>

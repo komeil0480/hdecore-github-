@@ -1,0 +1,47 @@
+.arrow {
+    display: inline-block;
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06a8ff;
+    border-right: 5px solid #06a8ff;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px , -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px , 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .arrow span {
+        width: 20px;
+        height: 20px;
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+    }
+    .arrow {
+        bottom: 100px;
+    }
+}

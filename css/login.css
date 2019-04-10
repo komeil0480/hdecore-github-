@@ -1,0 +1,299 @@
+a { 
+    text-decoration: none;
+}
+body {
+    direction: rtl !important;
+    font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* sorounding border  */
+.border {
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 4px;
+    position: relative;
+    padding-right: 4.5rem !important;
+}
+/* container */
+
+.container {
+    width: 500px;
+    margin: auto;
+}
+
+/* header */
+.header-container {
+}
+.header {
+    font-weight: normal;
+}
+
+/* ورودی های فرم */
+.input-div {
+    position: relative;
+    width: 90%;
+}
+.input-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 0 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    background: none;
+    transition: .2s;
+}
+.input-text {
+    position: absolute;
+    z-index: -1;
+    right: 8px;
+    top: 10px;
+    padding: 0 12px;
+    color: #888;
+    transition: .2s;
+}
+
+.input-input:focus ~ .input-text {
+    top: -10px;
+    padding-top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: rgb(8, 119, 245);
+    z-index: 1;
+}
+
+.input-text-top {
+    top: -10px;
+    padding-top: 0;
+    font-size: 14px;
+    background: #fff;
+    /* color: rgb(8, 119, 245); */
+    z-index: 1;
+}
+
+.input-input-lightBlue {
+    border-color: rgb(8, 119, 245);
+}
+.input-text-lightBlue {
+    color: rgb(8, 119, 245);
+}
+
+.input-input:focus
+ {
+    border: 2px solid rgb(8, 119, 245);
+    color: #444;
+}
+.input-input:focus ~ .input-text {
+    color: rgb(8, 119, 245);
+}
+
+/* برای قرمز شدن اینپوت */
+.input-red {
+    
+    border: 2px solid rgb(255, 17, 17);
+    box-shadow: 0 0 3px rgb(255, 17, 17);
+    color: rgb(255, 22, 22);
+}
+
+
+
+/* چشم که برای رمز عبور باز و بسته می شود */
+
+.eye-open {
+    opacity: .7 !important;
+    visibility: visible !important;
+}
+
+.pass-eye {
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: .2s;
+    visibility: hidden;
+}
+
+ .pass-eye:hover  {
+    opacity: 1 !important;
+    transition-delay: 0 !important;
+}
+
+.pass-eye img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+
+
+/* لینک فراموشی رمز عبور  */
+.forgot-pass {
+    /* margin: .5rem 3.5rem ; */
+    /* direction: ltr; */
+}
+.forgot-pass a {
+    color: rgb(8, 119, 245);
+    font-size: 17px;
+    transition: .2s;
+}
+.forgot-pass a:hover {
+    color: rgb(9, 124, 255);
+}
+
+/* دکمه ورود و ثبت نام */
+
+.sign-in-up {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+.sign-in-up .right {
+    width: 50%;
+}
+
+.sign-in-up .left {
+    width: 50%;
+    direction: ltr;
+}
+.sign-in-up a {
+    color: rgb(8, 119, 245)
+}
+
+
+
+/* مرا با خاطر داشته باش  */
+.login-remember {
+    margin-bottom: 40px;
+}
+.remember-me {
+    display: inline-block;
+    padding-top: 10px
+}
+
+.check-box {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    /* background: rgb(228, 228, 228); */
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    overflow: visible;
+}
+.check-box:hover {
+    cursor: pointer;
+}
+
+.check-box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 16px; 
+    height: 16px;
+    border-radius: 5px;
+    filter: invert(1);
+    transition: .5s;
+}
+
+/* دکمه ورود */
+
+#sign-in {
+    background: rgb(0, 102, 218);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Yekan";
+    padding: 5px 15px;
+    /* margin-left: 3.5rem; */
+    margin-top: 1rem;
+    margin-right: 6.7rem;
+    transition: .2s;
+}
+
+#sign-in:hover {
+    cursor: pointer;
+    background: rgb(36, 138, 255);
+}
+
+.hr {
+    position: relative;
+    right: 0;
+    width: 90%;
+    height: 1px;
+    background: rgb(196, 196, 196);
+}
+
+/* ثبت نام کنید */
+.sign-up-show {
+    margin-top: 20px;
+}
+
+.sign-up-show a{
+    color: rgb(8, 119, 245);
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.sign-up-show a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px dashed rgb(8, 119, 245);
+    transition: .4s;
+}
+
+.sign-up-show a:hover::before {
+    width: 100%;
+    right: 0;
+}
+
+/* utilites */
+
+.hdecor {
+    word-spacing: -8px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+.hr {
+     width: 90%;
+ }
+.my-2 {
+    margin: 2rem 0;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-5 {
+    margin-top: 5rem;
+}
+.text-ltr {
+    direction: ltr;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+.p-none {
+    padding: none;
+}
+
+

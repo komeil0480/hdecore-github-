@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jquery.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/bottom-nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>jquery | selectors</title>
+</head>
+<body >
+    <nav class="position-fixed pr-2 d-md-block d-none" id = "nav">
+        <div class="nav-wrapper w-100 h-100 position-relative">
+            <div class="navigation position-absolute d-flex flex-column justify-content-between" id="first-nav">
+                <a href="#" class="change_color">
+                    <!-- فیلتر -->
+                    <!-- فیلتر باید بالا گوشه ثابت باشه -->
+                    <!-- used svg for icons -->
+                    <img src="index/search-icon.png" alt="filter">
+                </a>
+                <!-- بقیه باید وسط شناور باشن -->
+                <!-- <a href="#">
+                    user login
+                    <img src="index/user.png" alt="home">
+                </a> -->
+                <a href="#" class="change_color">
+                    <!-- خانه -->
+                    <img src="index/home.svg" alt="home">
+                </a>
+                <a href="#" class="change_color">
+                    <!-- خرید -->
+                    <img src="index/shopping-cart.svg" alt="shop">
+                </a>
+                <!-- <a href="#" class="change_color">
+                    خدمات
+                    <img src="index/tools-cross.svg" alt="services">
+                </a> -->
+                <a id="about-link" href="#" class="change_color">
+                    <!-- درباره ما -->
+                    <img id="about-icon" src="index/exclamation.svg" alt="about">
+                </a>
+                <a id="call-link" href="#" class="change_color">
+                    <!-- تماس با ما -->
+                    <img id= "call-icon" src="index/phone.svg" alt="phone">
+                </a>
+            </div>
+
+            <a class = "toggle-nav" id="toggle-nav">
+                <div class="position-relative">
+                    <img src="index/right-chevron.png" alt="chevron-right">
+                    <img src="index/right-chevron.png" alt="chevron-right" class="" style="opacity: 0">
+                    <img src="index/right-chevron.png" alt="chevron-right" class="" style="opacity: 0">
+                </div>
+            </a>
+            <!-- دیو جدا کننده -->
+            <div class="seprate position-absolute"></div>
+            <div class="seprate position-absolute" id="seprate-2"></div>
+            <!-- برای منوی دوم -->
+            <div class="sec-nav position-absolute d-flex flex-column justify-content-center h-100" id= "sec-nav">
+                <div class="icon-container d-flex flex-column justify-content-between ">
+                        <a class="" href="#home" >
+                            <img src="index/home-shop/chair.png" alt="chair">
+                        </a>
+                        <a class="" href="#profile" >
+                            <img src="index/home-shop/table.png" alt="tabel">
+                        </a>
+                        <a class="" href="#contact" >
+                            <img src="index/home-shop/closet.png" alt="closet">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- نویگیشن پایین صفحه که در زیر 768 پیکسل فعال می شود -->
+    <nav class="bottom-nav position-fixed d-md-none d-flex flex-row justify-content-between w-100">
+        <a href="#" class="change_color">
+            <!-- search -->
+            <!-- جستجو باید بالا گوشه ثابت باشه -->
+            <!-- used svg for icons -->
+            <img src="index/search-icon.png" alt="filter">
+            <span>جستجو</span>
+        </a>
+        <!-- بقیه باید وسط شناور باشن -->
+        <!-- <a href="#">
+            user login
+            <img src="index/user.png" alt="home">
+        </a> -->
+        <a href="#" class="change_color active">
+            <!-- خانه -->
+            <img src="index/home.svg" alt="home">
+            <span>خانه</span>
+        </a>
+        <!-- <a href="#" class="change_color">
+            خرید
+            <img src="index/shopping-cart.svg" alt="shop">
+            <span>خرید</span>
+        </a> -->
+        <a href="#" class="change_color">
+            <!-- خدمات -->
+            <img src="index/tools-cross.svg" alt="services">
+            <span>خدمات</span>
+        </a>
+        <a id="about-link" href="#" class="change_color">
+            <!-- درباره ما -->
+            <img id="about-icon" src="index/exclamation.svg" alt="about">
+            <span>درباره ما</span>
+        </a>
+        <!-- <a id="call-link" href="#" class="change_color">
+            تماس با ما
+            <img id= "call-icon" src="index/phone.svg" alt="phone">
+        </a> -->
+    </nav>
+    <div class="left">
+        <section class="slide-wrap d-flex flex-row justify-content-center align-items-center">
+            <div class="slide-show">
+                <div class="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+                <div class="slide">
+                </div>
+                <div class="slide"></div>
+            </div>
+        </section>
+        <section class="d-flex flex-row justify-content-center my-5 dir-rtl">
+            <div class="services">
+                <!-- هدر که خودش یه لینکه به صفحه خدمات -->
+                <div class="head pr-4">
+                    <a href="#">
+                        <h2 class="text-dark">خدمات</h2>
+                        <hr>
+                    </a>
+                </div>
+                <!-- کارت های بسته های ارائه شده قسمت خدمات -->
+                <!-- کارت ها به صورت افقی کنار هم قرار دارند -->
+                <div class="service-card-wrap d-flex flex-row  "> 
+                    <div class="service-card ">
+                        <div class="max-width">
+                            <a href="#" class="text-dark">
+                                    <!-- عکس محصول -->
+                                <div class="service-img">
+                                    <img src="/index/service-img.jpg" alt="pic">
+                                </div>
+                                <!-- پانوشت محصول -->
+                                <div class="caption">
+                                    <!-- header -->
+                                    <h3>متری</h3>
+                                    <!-- توضیحات -->
+                                    <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+
+                                    <!-- دکمه برای اطلاعات بیشتر -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card ">
+                        <div class="max-width">
+                            <a href="#" class="text-dark">
+                                <!-- عکس محصول -->
+                                <div class="service-img">
+                                    <img src="/index/service-img.jpg" alt="pic">
+                                </div>
+                                <!-- پانوشت محصول -->
+                                <div class="caption">
+                                    <!-- header -->
+                                    <h3>متری</h3>
+                                    <!-- توضیحات -->
+                                    <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+
+                                    <!-- دکمه برای اطلاعات بیشتر -->
+                                </div>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            <div class="arrow left-arrow">
+                <a href="#"><img src="index/left-chevron.png" alt="left-arrow"></a>
+            </div>
+            <div class="arrow right-arrow">
+                <a href="#"><img src="index/right-chevron.png" alt="right-arrow"></a>
+            </div>
+        </section>
+        <section class="special-product d-flex justify-content-center dir-rtl mb-5  ">
+            <div class="product-wrap text-right my-5">
+                <div class="head pr-4 pt-1">
+                    <span class="d-inline-block">
+                        <h2>محصولات ویژه</h2>
+                        <hr>
+                    </span>
+                </div>
+                <div class="product-body ">
+                    <div class="product-card d-flex justify-content-center">
+                        <div class="product-img d-felx justify-content-center align-items-center text-center  mx-md-5 my-md-5">
+                            <img src="index/service-img.jpg" alt="powerbank">
+                        </div>
+                        <div class="product-about my-5 mr-5">
+                            <p class="mt-5 ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum, ipsam maxime, sapiente accusamus quod perspiciatis, ad at magnam repellendus tempora sunt. Reprehenderit, molestias dolores!</p>
+                            <button class="btn btn-primary dir-ltr">بیشتر</button>
+                        </div>
+                    </div>
+                    <div class="arrow left-arrow">
+                        <a href="#"><img src="index/left-chevron.png" alt="left-arrow"></a>
+                    </div>
+                    <div class="arrow right-arrow">
+                        <a href="#"><img src="index/right-chevron.png" alt="right-arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="dir-ltr">
+            <div class="wrap">
+                <div class="container">
+                    <div class="top d-flex flex-column align-items-center">
+                        <div class="top-container">
+                            <div class="news-letter-group mt-5 mb-3">
+                                <p class="text-center font-17">:از جدیدترین های اچ دکور با خبر شوید</p>
+                                <form class="news-letter-form  justify-content-center">
+                                    <button class="btn btn-primary">ارسال</button>
+                                    <input type="text" class="dir-rtl" placeholder="آدرس ایمیل خود را وارد کنید">
+                                </form>
+                            </div>
+                            <div class="social-media-container d-flex flex-row justify-content-center">
+                                <!-- <p>ما ار در شبکه های اجتماعی دنبال کنید</p> -->
+                                <div class="social-media-links mb-5">
+                                    <a href="#"><img src="index/telegram/tel logo w.png" class= "telegram-logo" alt="telegram_logo"></a>
+                                    <a href="#"><img src="index/insta/insta w.png" alt="instagram_logo"></a>
+                                    <a href="#"><img src="index/aparat/aparat-seeklogo.png" class= "aparat-logo" alt="aparat_logo"></a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                            <button class="btn licenses dir-rtl">مجوز های اچ دکور (نشان ملی ثبت و ...)</button>
+                        </div>
+                        </div>
+                        <div class="hr mt-4"></div>
+                    </div>
+                    <div class="middle d-flex flex-row justify-content-center my-md-5 my-3 position-relative">
+                        <div class="middle-center">
+                            <div class="row">
+                                <div class="column f-left d-flex flex-row justify-content-center col-md-4 col-12">
+                                    <div class="column-container">
+                                        <h2>اچ دکور</h2>
+                                        <a href="#">همکاری با سازمان ها</a>
+                                        <a href="#">تماس با اچ دکور</a>
+                                    </div>
+                                </div>
+                                <div class=" column center d-flex flex-row justify-content-center col-md-4 col-12">
+                                    <div class="column-container">
+                                        <h2>خدمات مشتریان</h2>
+                                        <a href="#">پرسش های متداول</a>
+                                        <a href="#">رویه بازگرداندن کالا</a>
+                                        <a href="#">شرایط استفاده</a>
+                                        <a href="#">حریم خوصوی</a>
+                                    </div>
+                                </div>
+                                <div class="column right d-flex flex-row justify-content-center col-md-4 col-12">
+                                    <div class="column-container">
+                                        <h2>راهنمای سفارش و خرید</h2>
+                                        <a href="#">نحوه سفارش محصول</a>
+                                        <a href="#">نحوه سفارش خدمات</a>
+                                        <a href="#">رویه ارسال محصول</a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="hr w-100-vw"></div>
+                <div class="bottom d-flex flex-row  align-items-center mt-3">
+                    <div class="w-25">
+                        <!-- <p class="dir-rtl">
+                                کاری از Edge Runners
+                        </p> -->
+                    </div>
+                    <div class="w-75 text-right mr-5">
+                        <p>شماره تماس: 09195493324 | آدرس: خ کلهر- کوچه القاسم- پلاک 5</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <!-- <script src="js/nav.js"></script> -->
+</body>
+</html>

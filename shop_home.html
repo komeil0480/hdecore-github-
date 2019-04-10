@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/shop_home.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Hdecor | خرید</title>
+</head>
+<body>
+    <nav class="position-fixed pr-2 d-none d-md-block" id = "nav">
+        <div class="nav-wrapper w-100 h-100 position-relative">
+            <div class="navigation position-absolute d-flex flex-column justify-content-between" id="first-nav">
+                <a href="#" class="change_color">
+                    <!-- فیلتر -->
+                    <!-- فیلتر باید بالا گوشه ثابت باشه -->
+                    <!-- used svg for icons -->
+                    <img src="index/search-icon.png" alt="filter">
+                </a>
+                <!-- بقیه باید وسط شناور باشن -->
+                <!-- <a href="#">
+                    user login
+                    <img src="index/user.png" alt="home">
+                </a> -->
+                <a href="#" class="change_color">
+                    <!-- خانه -->
+                    <img src="index/home.svg" alt="home">
+                </a>
+                <a href="#" class="change_color">
+                    <!-- خرید -->
+                    <img src="index/shopping-cart.svg" alt="shop">
+                </a>
+                <a href="#" class="change_color">
+                    <!-- خدمات -->
+                    <img src="index/tools-cross.svg" alt="services">
+                <a id="about-link" href="#" class="change_color">
+                    <!-- درباره ما -->
+                    <img id="about-icon" src="index/exclamation.svg" alt="about">
+                </a>
+                <a id="call-link" href="#" class="change_color">
+                    <!-- تماس با ما -->
+                    <img id= "call-icon" src="index/phone.svg" alt="phone">
+                </a>
+            </div>
+
+            <a class = "toggle-nav" id="toggle-nav">
+                <div class="position-relative">
+                    <img src="index/right-chevron.png" alt="chevron-right">
+                    <img src="index/right-chevron.png" alt="chevron-right" class="" style="opacity: 0">
+                    <img src="index/right-chevron.png" alt="chevron-right" class="" style="opacity: 0">
+                </div>
+            </a>
+            <!-- دیو جدا کننده -->
+            <div class="seprate position-absolute"></div>
+            <div class="seprate position-absolute" id="seprate-2"></div>
+            <!-- برای منوی دوم -->
+            <div class="sec-nav position-absolute d-flex flex-column justify-content-center h-100" id= "sec-nav">
+                <div class="icon-container d-flex flex-column justify-content-between ">
+                        <a class="" href="#home" >
+                            <img src="index/home-shop/chair.png" alt="chair">
+                        </a>
+                        <a class="" href="#profile" >
+                            <img src="index/home-shop/table.png" alt="tabel">
+                        </a>
+                        <a class="" href="#contact" >
+                            <img src="index/home-shop/closet.png" alt="closet">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- نویگیشن پایین صفحه که در زیر 768 پیکسل فعال می شود -->
+    <nav class="bottom-nav position-fixed d-md-none d-flex flex-row justify-content-between w-100">
+        <a href="#" class="change_color">
+            <!-- search -->
+            <!-- جستجو باید بالا گوشه ثابت باشه -->
+            <!-- used svg for icons -->
+            <img src="index/search-icon.png" alt="filter">
+            <span>جستجو</span>
+        </a>
+        <!-- بقیه باید وسط شناور باشن -->
+        <!-- <a href="#">
+            user login
+            <img src="index/user.png" alt="home">
+        </a> -->
+        <a href="#" class="change_color active">
+            <!-- خانه -->
+            <img src="index/home.svg" alt="home">
+            <span>خانه</span>
+        </a>
+        <a href="#" class="change_color">
+            <!-- خرید -->
+            <img src="index/shopping-cart.svg" alt="shop">
+            <span>خرید</span>
+        </a>
+        <a href="#" class="change_color">
+            <!-- خدمات -->
+            <img src="index/tools-cross.svg" alt="services">
+            <span>خدمات</span>
+        </a>
+        <a id="about-link" href="#" class="change_color">
+            <!-- درباره ما -->
+            <img id="about-icon" src="index/exclamation.svg" alt="about">
+            <span>درباره ما</span>
+        </a>
+        <!-- <a id="call-link" href="#" class="change_color">
+            تماس با ما
+            <img id= "call-icon" src="index/phone.svg" alt="phone">
+        </a> -->
+    </nav>
+    <div class="wrap-all">
+        <header>
+            <div class="header-slide-show"></div>
+        </header>
+    </div>
+</body>
+</html>

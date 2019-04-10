@@ -1,0 +1,686 @@
+
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Yekan" !important;
+
+}
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    /* color: #fff !important; */
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color : #fff;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
+    font-family: "Yekan";
+    background: rgb(238, 238, 238) !important;
+    direction: rtl !important;
+}
+
+
+.wrap-all {
+    width: 95vw;
+    float: left;
+    height: auto;
+}
+
+/* .wrap-all::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+} */
+
+/* Navigation  */
+/* برای منوی عمودی */
+nav {
+    z-index: 1;
+}
+.navigation {
+    top: 20%;
+    height: 60%;
+}
+nav a {
+    display:inline-block;
+    padding: 5px;
+    padding: 5px;
+}
+
+nav a img {
+    width: 40px;
+    height: 40px;
+    /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(340deg); */
+    /* filter: invert(1); */
+    transition: .5s;
+}
+
+/* navigation */
+/* برای منوی پایین صفحه */
+.bottom-nav {
+    bottom: 0;
+    height: 60px !important;
+    display: block !important;
+    color: #fff;
+    background: #fff;
+}
+
+
+
+
+/* کوچک کردن عکس لینک درباره ما و تماس با ما */
+
+#about-link {
+    padding: 5px;
+}
+
+#about-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#call-link {
+    padding: 5px;
+}
+
+#call-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* header */
+
+
+header {
+    background: no-repeat url('../index/bg-1280-720.jpg');
+    background-size: cover;
+    background-position: center top;
+    /* background: rgb(2, 2, 2); */
+    height: 100vh !important;
+    width : 100vw;
+    position: relative;
+    top: 0;
+    left: 4vw;
+}
+
+
+header .branding {
+    height: 65%;
+}
+
+.button-wrapper a {
+    padding: auto 10px !important;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+/* Offfer section */
+/* 
+.offer {
+    background: #262626;
+    padding:0 !important;
+    position: relative;
+}
+
+
+#parket {
+    background: #3e4c65;
+    padding: 0 !important;
+}
+
+.parket {
+    margin-top: 200px;;
+    padding: 12px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background: rgba(43, 43, 43, .2);
+    transform: rotate(-36deg) skew(20deg) scale(0.8);
+    transition: .5s;
+}
+
+#parket:hover .parket {
+    opacity:  .5;
+
+}
+
+.layer {
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 1);
+    transition: 0.5s ease-in-out;
+}
+
+#parket:hover .layer:nth-child(4) {
+    background: rgba(43, 43, 43, 1);
+    transform: translate(80px , -80px)
+}
+
+#parket:hover .layer:nth-child(3) {
+    background: rgba(43, 43, 43, .8);
+    transform: translate(60px , -60px)
+}
+
+#parket:hover .layer:nth-child(2) {
+    background: rgba(43, 43, 43, .6);
+    transform: translate(40px , -40px)
+}
+
+#parket:hover .layer:nth-child(1) {
+    background: rgba(43, 43, 43, .4);
+    transform: translate(20px , -20px)
+} */
+
+
+/* 
+.parket-1 {
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+}
+
+.parket-2 {
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+}
+.parket-3 {
+    position: absolute;
+    bottom: 100px;
+    left: 230px;
+}
+
+
+#parket-text {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#parket-text h2 {
+    font-size: 2.5rem !important;
+} */
+
+
+
+
+
+
+
+/* services */
+
+.services {
+    width: 95%;
+    height: 470px;
+    background: #fff;
+    padding-top: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(167, 167, 167, 0.3);
+    position: relative;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.services h2 {
+
+}
+.services hr {
+    background: gold;
+}
+
+.service-card-wrap {
+    width: 93%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.service-card {
+    width: 260px;
+    margin: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); */
+    padding: 10px;
+    /* border: 1px solid #aaa; */
+    transition: .3s;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 5px rgba(151, 151, 151, 0.644);
+    transform: scale(1.01);
+}
+
+.services h3 , .services p {
+    text-align: right;
+}
+
+.service-img {
+    
+}
+
+.service-card img {
+    width: 240px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 100px;
+    transform: translateY(-50%);
+    background: rgba(230, 230, 230, 0.459);
+    box-shadow:  0 0 3px rgba(184, 184, 184, 0.699);
+    transition: .5s;
+}
+
+.arrow:hover {
+    box-shadow: 0 0 3px rgb(184, 184, 184);
+    background: rgba(230, 230, 230, 0.6)
+}
+
+.arrow a {
+    width :100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow img {
+    width: 40px;
+    height: 40px;
+    filter: invert(.3);
+}
+
+.left-arrow {
+    border-radius: 0 5px 5px 0 ;
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+    border-radius: 5px 0 0 5px ;
+}
+
+/* برای قسمت خرید */
+/* 
+
+
+.shop {
+    width: 90%;
+    margin-right: 5%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #aaa;
+    
+}
+
+.shop h2 {
+    text-align: right;
+}
+.shop hr {
+    background: gold;
+}
+
+.shop .shop_card {
+    width: 240px;
+    margin: 0 10px;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+}
+
+.shop h3 , .shop p {
+    text-align: right;
+}
+
+
+
+.shop_card img {
+    width: 240px;
+}
+
+ */
+
+/* footer */
+/* 
+footer * {
+    text-align: right;
+}
+
+footer a {
+    color: #000;
+}
+
+.footer_middlebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.information {
+    width: 60%;
+}
+
+.information .header {
+    margin: auto;
+}
+
+.footer_form {
+    width: 40%;
+}
+
+.footer_form p { 
+    padding-bottom: 10px ;
+}
+
+.footer_form .subscribe_news_letter_form  {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+} */
+/* */
+/*  */
+/* دکمه ارسال در فرم "از جدید ترین های اچ دکور باخبر شوید */
+/*  */
+/*  */
+/* #btn_submit_news_letter  {
+    border-radius: 0 !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    background: rgb(25, 182, 255);
+    border:none;
+    outline: none !important;
+    color: #fff;
+}
+#btn_submit_news_letter:hover {
+    background: rgb(56, 192, 255);
+    cursor: pointer;
+}
+.subscribe_news_letter_form input {
+    border-radius: 0 !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.social_netwoks > span {
+    padding: 10px 0;
+    display: inline-block;
+} */
+
+/*  */
+/* قسمت شبکه های اجتماعی */
+/*  */
+/* 
+.social_netwoks_icons img {
+    width: 35px;
+    height: 35px;
+}
+
+.social_netwoks_icons a  {
+    display:inline-block;border-radius: 5px;
+    color: #222;
+    padding: 3px;
+    margin: 2px 0;
+}
+.instagram  {
+    background: linear-gradient( to right, #f58529, #dd2a7b, #8134af, #515bd4 );
+    color: #222;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.instagram img {
+    filter: invert(1);
+}
+
+.telegram { 
+    background: #0088cc;
+}
+
+.social_netwoks_icons a:hover {
+    color: #fff;
+}
+
+
+.social_netwoks_icons a span {
+    padding:0 10px;
+}
+*/
+
+
+
+
+/* new footer */
+
+footer {
+    background: rgb(34, 34, 34);
+    color: #fff;
+    width: 100vw;
+    position: relative;
+    left: 4vw
+}
+
+.wrap {
+    width: 90%;
+    /* background: rgb(44, 44, 44); */
+}
+
+/* top of footer */
+
+.news-letter-group {
+    width: 300px;
+}
+
+.news-letter-form {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.news-letter-form input {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 75% !important;
+    height: 100%;
+    outline: none; 
+    border: 0;
+    padding: 5px;
+    padding-right: 20px;
+}
+.news-letter-form input::placeholder {
+    color: #888;
+}
+
+.form-control:focus {
+    border-color: inherit !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.news-letter-form button {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 25% !important;
+    height: 100% !important;
+}
+
+/* قیمت شبکه های اجتماعی */
+
+
+.social-media-links a {
+    padding: 0 5px;
+}
+.social-media-links img {
+    width: 40px;
+    height: 40px;
+}
+
+.telegram-logo {
+    width: 41px !important;
+    height: 41px !important;
+}
+
+.aparat-logo {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+/* دکمه مجوز های اچ دکور */
+.licenses {
+    background: rgb(1, 126, 228);
+    color: #fff;
+    font-size: 18px;
+}
+.licenses:hover {
+    background: rgb(30, 154, 255)
+}
+
+
+/* middle of footer */
+
+.middle-center {
+    width: 70%;
+
+}
+
+.middle  .column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.column-container h2 {
+    font-size: 22px !important;
+    color: #fff;
+}
+
+.column-container a {
+    color: #ddd;
+    font-size: 17px;
+    transition: .2s;
+}
+
+.column-container a:hover {
+    color: #fff;
+}
+
+.left , .center {
+    border-right: 1px solid rgb(255, 208, 1);
+}
+
+/* Utilites */
+
+.padding-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+
+.invert {
+    filter: invert(0) !important;
+}
+
+.dir-ltr {
+    direction: ltr !important;
+}
+
+.dir-rtl {
+    direction: rtl !important;
+}
+
+.font-17 {
+    font-size: 18px !important;
+}
+
+.hr { 
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right , rgb(253, 224, 92), rgb(251, 255, 0), rgb(138, 129, 1));
+}
+.w-100-vw {
+    width :100vw;
+}
+
+
+@media (max-width: 1050px) {
+    .column-container h2 {
+        font-size: 20px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .column-container h2 {
+        font-size: 16px !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .left , .center {
+        border-right: none;
+    }
+    .column-container {
+        align-items: center !important;
+    }
+    .column {
+        padding:12px 0 ;
+    }
+    .left, .center {
+        border-bottom: 1px solid rgb(255, 208, 1);
+    }
+    .wrap-all {
+        width: 100vw;
+    }
+    .vertical-nav {
+        display: none;
+    }
+    header {
+        height: calc(100vh - 60px) !important;
+        left: 0;
+    }
+    footer { 
+        left: 0;
+    }
+    .wrap {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}

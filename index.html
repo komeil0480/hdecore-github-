@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fontiran.com:license" content="THJBT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/bottom-nav.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>Hdecor | طراحی دکوراسیون</title>
+</head>
+ <body class="" onscroll="change_links_color()">
+     <!-- navigation menu -->
+    <!-- منوی عمودی -->
+    <nav class="vertical-nav position-fixed h-100 pr-2">
+        <div class="navigation position-fixed d-none d-md-flex flex-column justify-content-between">
+            <a href="#" class="change_color">
+                <!-- فیلتر -->
+                <!-- فیلتر باید بالا گوشه ثابت باشه -->
+                <!-- used svg for icons -->
+                <img src="index/search-icon.png" alt="filter">
+            </a>
+            <!-- بقیه باید وسط شناور باشن -->
+            <!-- <a href="#">
+                user login
+                <img src="index/user.png" alt="home">
+            </a> -->
+            <a href="#" class="change_color">
+                <!-- خانه -->
+                <img src="index/home.svg" alt="home">
+            </a>
+            <!-- <a href="#" class="change_color">
+                خرید
+                <img src="index/shopping-cart.svg" alt="shop">
+            </a> -->
+            <a href="#" class="change_color">
+                <!-- خدمات -->
+                <img src="index/tools-cross.svg" alt="services">
+            <a id="about-link" href="#" class="change_color">
+                <!-- درباره ما -->
+                <img id="about-icon" src="index/exclamation.svg" alt="about">
+            </a>
+            <a id="call-link" href="#me" class="change_color">
+                <!-- تماس با ما -->
+                <img id= "call-icon" src="index/phone.svg" alt="phone">
+            </a>
+        </div>
+    </nav>
+    <!-- نویگیشن پایین صفحه که در زیر 768 پیکسل فعال می شود -->
+    <nav class="bottom-nav position-fixed d-md-none d-flex flex-row justify-content-between w-100">
+        <a href="#" class="change_color">
+            <!-- search -->
+            <!-- جستجو باید بالا گوشه ثابت باشه -->
+            <!-- used svg for icons -->
+            <img src="index/search-icon.png" alt="filter">
+            <span>جستجو</span>
+        </a>
+        <!-- بقیه باید وسط شناور باشن -->
+        <!-- <a href="#">
+            user login
+            <img src="index/user.png" alt="home">
+        </a> -->
+        <a href="#" class="change_color active">
+            <!-- خانه -->
+            <img src="index/home.svg" alt="home">
+            <span>خانه</span>
+        </a>
+        <!-- <a href="#" class="change_color">
+            خرید
+            <img src="index/shopping-cart.svg" alt="shop">
+            <span>خرید</span>
+        </a> -->
+        <a href="#" class="change_color">
+            <!-- خدمات -->
+            <img src="index/tools-cross.svg" alt="services">
+            <span>خدمات</span>
+        </a>
+        <a id="about-link" href="#" class="change_color">
+            <!-- درباره ما -->
+            <img id="about-icon" src="index/exclamation.svg" alt="about">
+            <span>درباره ما</span>
+        </a>
+        <!-- <a id="call-link" href="#" class="change_color">
+            تماس با ما
+            <img id= "call-icon" src="index/phone.svg" alt="phone">
+        </a> -->
+    </nav>
+    <!-- سکشن اول با پس زمینه مشگی -->
+    <header class=" p-none">
+        <!-- برای لوگوی بزرگ به رنگ طلایی div -->
+        <!-- باید عرضش صد در صد باشه -->
+        <div class="branding w-100">
+
+        </div>
+        <!-- برای متن زیر لوگو -->
+        <!-- باید عرضش صد در صد باشه -->
+        <div class="text container text-center text-white w-100 pb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatum dicta sunt repellendus dolor doloremque distinctio
+            nostrum minus ad itaque ipsum?
+        </div>
+        <!-- دیو دارای دو لینک -->
+        <div class="button-wrapper text-center container w-100">
+            <a href="#" class= "btn btn-outline-light">خرید</a>
+            <a href="#" class= "btn btn-outline-light">خدمات</a>
+        </div>
+    </header>
+    <div class="wrap-all">
+        <!-- سکشن خدمات -->
+        <section class="d-flex flex-row justify-content-center my-5">
+            <div class="services">
+                <!-- هدر که خودش یه لینکه به صفحه خدمات -->
+                <div class="head pr-4">
+                    <a href="#">
+                        <h2 class="text-dark">خدمات</h2>
+                        <hr>
+                    </a>
+                </div>
+                <!-- کارت های بسته های ارائه شده قسمت خدمات -->
+                <!-- کارت ها به صورت افقی کنار هم قرار دارند -->
+                <div class="service-card-wrap d-flex flex-row  "> 
+                    <div class="service-card ">
+                        <div class="max-width">
+                            <a href="#" class="text-dark">
+                                    <!-- عکس محصول -->
+                                <div class="service-img">
+                                    <img src="/index/service-img.jpg" alt="pic">
+                                </div>
+                                <!-- پانوشت محصول -->
+                                <div class="caption">
+                                    <!-- header -->
+                                    <h3>متری</h3>
+                                    <!-- توضیحات -->
+                                    <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+
+                                    <!-- دکمه برای اطلاعات بیشتر -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="service-card ">
+                    <div class="max-width">
+                        <a href="#" class="text-dark">
+                            <!-- عکس محصول -->
+                            <div class="service-img">
+                                <img src="/index/service-img.jpg" alt="pic">
+                            </div>
+                            <!-- پانوشت محصول -->
+                            <div class="caption">
+                                <!-- header -->
+                                <h3>متری</h3>
+                                <!-- توضیحات -->
+                                <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+
+                                <!-- دکمه برای اطلاعات بیشتر -->
+                            </div>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            <div class="arrow left-arrow">
+                <a href="#"><img src="index/left-chevron.png" alt="left-arrow"></a>
+            </div>
+            <div class="arrow right-arrow">
+                <a href="#"><img src="index/right-chevron.png" alt="right-arrow"></a>
+            </div>
+        </section>
+        <!-- 
+        .
+        ::
+        :::
+        :::: -->
+        <!-- هر وقت بخش خرید اضافه شد این قسمت رو فعال کن -->
+        <!-- ::::
+        :::
+        ::
+        . 
+    -->
+        <!-- سکشن خرید -->
+        <!-- <section class="d-flex flex-row justify-content-center my-5">
+            <div class="services">
+                <div class="head pr-4">
+                    <a href="#">
+                        <h2 class="text-dark">محطولات</h2>
+                        <hr>
+                    </a>
+                </div>
+                کارت های محصول های ارائه شده قسمت فروش
+                کارت ها به صورت افقی کنار هم قرار میگیرند
+                <div class="service-card-wrap d-flex flex-row ">
+                    <div class="service-card">
+                        <div class="max-width">
+                        <a href="#" class="text-dark">
+                                <div class="service-img">
+                                    <img src="/index/service-img.jpg" alt="pic">
+                                </div>
+                                <div class="caption">
+                                    header
+                                    <h3>متری</h3>
+                                    توضیحات
+                                    <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+                                    دکمه برای اطلاعات بیشتر
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="max-width">
+                            <a href="#" class="text-dark">
+                                <div class="service-img">
+                                    <img src="/index/service-img.jpg" alt="pic">
+                                </div>
+                                <div class="caption">
+                                    header
+                                    <h3>متری</h3>
+                                    توضیحات
+                                    <p >پیاده سازی پارکت به صورت متری با قیمت های باور نکردنی</p>
+                                    دکمه برای اطلاعات بیشتر
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow left-arrow">
+                    <a href="#"><img src="index/left-chevron.png" alt="left-arrow"></a>
+                </div>
+                <div class="arrow right-arrow">
+                    <a href="#"><img src="index/right-chevron.png" alt="right-arrow"></a>
+                </div>
+            </div>
+        </section> -->
+        <section class="about-website d-flex justify-content-sm-start justify-content-center text-left py-sm-2 mb-5 pr-sm-2">
+            <div class="about-wrap d-flex justify-content-center text-sm-right text-center pr-sm-3">
+                <div class="info p-3">
+                    <h2>تیتر</h2>
+                    <p>سلمست مسیتشمب متسشمکی تبمسیشتبم تسمکشیتب متس منبتمن ستیشمنبتمنشست مبنتسمیت  سیمن تبمستمنیت بمن تممن سشمنتب مسیت مستیبتس مت بمت بمشتسم م تسشیم تبمسیم </p>
+                </div>
+            </div>
+            <div class="about-manager">
+                <div class="img-wrap">
+                    <img src="#" alt="manager image">
+                </div>
+                <div class="about-text text-sm-left text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime consectetur magni inventore delectus et?</div>
+            </div>
+            <div class="circle">
+                <img src="index/circle.svg" alt="circle">
+            </div>
+        </section>
+    </div>
+    <footer class="dir-ltr">
+        <div class="wrap">
+            <div class="container">
+                <div class="top d-flex flex-column align-items-center">
+                    <div class="top-container">
+                        <div class="news-letter-group mt-5 mb-3">
+                            <p class="text-center font-17">:از جدیدترین های اچ دکور با خبر شوید</p>
+                            <form class="news-letter-form  justify-content-center">
+                                <button class="btn btn-primary">ارسال</button>
+                                <input type="text" class="dir-rtl" placeholder="آدرس ایمیل خود را وارد کنید">
+                            </form>
+                        </div>
+                        <div class="social-media-container d-flex flex-row justify-content-center">
+                            <!-- <p>ما ار در شبکه های اجتماعی دنبال کنید</p> -->
+                            <div class="social-media-links mb-5">
+                                <a href="#"><img src="index/telegram/tel logo w.png" class= "telegram-logo" alt="telegram_logo"></a>
+                                <a href="#"><img src="index/insta/insta w.png" alt="instagram_logo"></a>
+                                <a href="#"><img src="index/aparat/aparat-seeklogo.png" class= "aparat-logo" alt="aparat_logo"></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                        <button class="btn licenses dir-rtl">مجوز های اچ دکور (نشان ملی ثبت و ...)</button>
+                    </div>
+                </div>
+                <div class="hr w-100 mt-4"></div>
+                </div>
+                    <div class="middle d-flex flex-row justify-content-center my-md-5 my-3 position-relative">
+                    <div class="middle-center">
+                        <div class="row">
+                            <div class="column left d-flex flex-row justify-content-center col-md-4 col-12">
+                                <div class="column-container">
+                                    <h2>اچ دکور</h2>
+                                    <a href="#">همکاری با سازمان ها</a>
+                                    <a href="#">تماس با اچ دکور</a>
+                                </div>
+                            </div>
+                            <div class=" column center d-flex flex-row justify-content-center col-md-4 col-12">
+                                <div class="column-container">
+                                    <h2>خدمات مشتریان</h2>
+                                    <a href="#">پرسش های متداول</a>
+                                    <a href="#">رویه بازگرداندن کالا</a>
+                                    <a href="#">شرایط استفاده</a>
+                                    <a href="#">حریم خوصوی</a>
+                                </div>
+                            </div>
+                            <div class="column right d-flex flex-row justify-content-center col-md-4 col-12">
+                                <div class="column-container">
+                                    <h2>راهنمای سفارش و خرید</h2>
+                                    <a href="#">نحوه سفارش محصول</a>
+                                    <a href="#">نحوه سفارش خدمات</a>
+                                    <a href="#">رویه ارسال محصول</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="hr w-100-vw"></div>
+            <div class="bottom d-flex flex-row align-items-center justify-content-center mt-3">
+                <div>
+                    <p class="text-center px-2">شماره تماس: 09195493324 | آدرس: خ کلهر- کوچه القاسم- پلاک 5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

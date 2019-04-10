@@ -1,0 +1,248 @@
+* {
+    direction: rtl !important;
+}
+a{
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ul , li {
+    list-style: none;
+}
+hr {
+    margin: 5px 0;;
+}
+.header {
+    height: 80px;
+    padding: 0 !important;
+}
+.header>a {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 1rem;
+    width: 200px;
+}
+.top-nav {
+    background: #fff;
+    box-shadow: 0 0 5px #aaa;
+}
+
+/* **************** */
+/* برای آیکون سمت راست */
+/* **************** */
+.nav-right {
+    width: 260px;
+}
+
+/* برای منوی سمت چپ */
+.nav-left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.nav-left> * {
+    height: 100%;
+    transition: .2s;
+    color: #000 !important;
+}
+.nav-left> *:hover {
+    box-shadow: 0 0 2px rgba(107, 107, 107, 0.418);
+}
+.nav-left > li {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.icon {
+    font-size: 18px;
+    color: #fff;
+}
+.nav-left .num {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    font-size: 12px;
+    background: tomato;
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.dropdown-menu {
+    cursor: default !important;
+}
+.dropdown-menu li {
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+.dropdown-middle {
+    padding: 0;
+}
+.dropdown-middle a {
+    color: #5e5e5e;
+    padding: 10px 0;
+    padding-right: 10px;
+    display: block;
+}
+.dropdown-middle a span {
+    padding-right: 5px;
+}
+.bell-dropdown {
+    width: 250px;
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+.bell-item-head {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+}
+.bell-item {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+}
+.bell-item a{
+    color: #000;
+}
+.bell-item:hover {
+    background: #eee;
+}
+.mail-dropdown {
+    width: 250px;
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+.mail-item-head {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+}
+.mail-item {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+}
+.mail-item:hover {
+    background: #eee;
+}
+.user-dropdown {
+    width: 250px;
+}
+.btn-none {
+    display: inline-block;
+    background: none;
+    border: 0;
+}
+.btn-none:focus {
+    outline: none
+}
+.btn-none span {
+    display: inline-block;
+    color: #000;
+}
+.circle-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.circle-2 {
+    width: 70px ;
+    height: 70px ;
+    box-shadow: 0 0 0 3px rgba(180, 180, 180, 0.329);
+    margin-bottom: 1rem;
+    margin-left: 0 ;
+    border-radius: 50%;
+}
+.circle-3 {
+    width: 80px ;
+    height: 80px ;
+    box-shadow: 0 0 3px 5px rgba(189, 189, 189, 0.705);
+    margin: 1rem 0;
+    border-radius: 50%;
+}
+.exit {
+    background: #0F2D40;
+}
+.exit:hover {
+    background: #194759;
+    box-shadow: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    top: 0px;
+    margin-top: 80px;
+    background: #2b333e;
+}
+.sidenav {
+    padding: 0;
+}
+.sidenav * {
+    color: #fff;
+}
+.sidenav > li >a {
+    
+    padding: 18px 20px;
+    color: #89929d;
+    border-radius: 0;
+    font-size: 16px;
+}
+.sidenav > li > a.active {
+    color: #fff;
+    background: #252c35;
+    border-right: 5px solid #00aaff;
+
+}
+.sidenav > li > a.active > span {
+    color: #00aaff;
+}
+
+.side-dropdown {
+    padding: 0;
+    background: #252c35;
+}
+.side-dropdown li {
+    padding: .3rem 3rem;
+    transition: .5s;
+}
+.side-dropdown li:hover {
+    background: rgb(48, 109, 103);
+}
+/* --------------------- */
+/* برای بخش اصلی */
+/* --------------------- */
+.main {
+    width: calc(100% - 260px);
+    height: 100%;
+    margin-top: 50px;
+    margin-right: 260px;
+}
+/* utilities */
+.dir-rtl {
+    direction: rtl !important;
+}
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,53 @@
+
+/* Navigation  */
+/* برای منوی عمودی */
+nav {
+    z-index: 1;
+    width:100px;
+    /* border-left: 1px solid rgba(192, 192, 192, 0.322); */
+    right: 0;
+    height: 100%;
+    display: block;
+}
+.navigation {
+    top: 20%;
+    height: 60%;
+}
+nav a {
+    display:inline-block;
+    padding: 5px;
+    padding: 5px;
+}
+
+nav a img {
+    width: 40px;
+    height: 40px;
+    /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(340deg);
+    filter: invert(1); */
+    transition: .5s;
+}
+
+.toggle-nav {
+    position: absolute;
+    /* top: 50%;
+    right: 100%; */
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: inline-block;
+}
+/* برای بستن nav */
+.closee {
+    transform: translateX(110%);
+    transition: .3s !important;
+}
+/* برای باز کردن nav */
+.opene {
+    /* transform: translateX(-100%); */
+    transition: .3s !important;
+}
+
+.close-nav img {
+    /* width: 10px !important; */
+    height: auto !important;
+}
+

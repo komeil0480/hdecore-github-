@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../fonts/vazir/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>پنل مدیریت | داشبرد</title>
+</head>
+<body>
+    <nav class="header navbar d-flex flex-row justify-content-start">
+        <div class="top-nav nav flex-grow-1 h-100">
+            <ul class="nav-left d-flex flex-row">
+                <li>
+                    <a class="btn-none flex-row-center"  id="bell" data-toggle='dropdown' aria-haspopup='ture' aria-expanded="false">
+                        <span class='far fa-bell icon'></span>
+                        <span class="num">1</span>
+                    </a>
+                    <ul class="dropdown-menu bell-dropdown text-right p-2" aira-labelledby="bell">
+                        <li class="bell-item-head"><span id="bell-num">10</span> اعلان جدید</li>
+                        <li class="bell-item">
+                            <a href="#" class="dir-rtl">
+                                <span class="fas fa-user pl-2"></span> <span id="bell-user-num">5</span> کاربر جدید ثبت نام کردند
+                            </a>
+                        </li>
+                        <li class="bell-item">
+                                <a href="#" class="dir-rtl">
+                                    <span class="fas fa-user pl-2"></span> <span id="bell-user-num">5</span> کاربر جدید ثبت نام کردند
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a class="btn-none flex-row-center" type="button" id="mail" data-toggle='dropdown' aria-haspopup='ture' aria-expanded="false">
+                        <span class='fas fa-envelope icon'></span>
+                        <span class="num">1</span>
+                    </a>
+                    <ul class="dropdown-menu mail-dropdown text-right p-2" aira-labelledby="mail">
+                        <li class="mail-item-head"><span id="bell-num">4</span> پیام خوانده نشده</li>
+                        <li class="mail-item">
+                            <a href="#" class="dir-rtl">
+                                <span class="fas fa-user pl-2"></span> <span id="mail-user-num">5</span> کاربر جدید ثبت نام کردند
+                            </a>
+                        </li>
+                        <li class="mail-item">
+                                <a href="#" class="dir-rtl">
+                                    <span class="fas fa-user pl-2"></span> <span id="mail-user-num">5</span> کاربر جدید ثبت نام کردند
+                                </a>
+                            </li>
+                    </ul>
+                </li> -->
+                <li class="dropdown">
+                    <button class="btn-none " type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/profile-image.jpg" alt="" class="circle-1">
+                      <span class=' px-1'>علی امجدی</span>
+                    </button>
+                    <div class="dropdown-menu user-dropdown" aria-labelledby="userDropdown">
+                      <ul class="dropdown-middle d-flex flex-column justify-content-right">
+                        <li>
+                            <a href="#" class="d-flex flex-row align-items-center">
+                                <i class="far fa-user"></i>                            
+                                <span>ویرایش پروفایل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex flex-row align-items-center">
+                                <i class="fas fa-exit"></i>                            
+                                <span>خروج</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="nav-right d-flex flex-row justify-content-center align-items-center">
+                <h2>داشبورد</h2>
+            </div>
+        </div>
+    </nav>
+    <nav class="sidebar">
+        <ul class='nav d-flex flex-column text-right sidenav'>
+            <li class='nav-item'>
+                <a href="#" class='nav-link navbar-toggler active' id="active" data-toggle='collapse' data-target='#users'>
+                    <span class="far fa-user pl-1"></span>
+                    کاربران
+                </a>
+                <ul class='side-dropdown collapse navbar-collapse' id="users">
+                    <Li><a href="#">لیست کاربران</a></Li>
+                    <li><a href="#">افزودن کاربر جدید</a></li>
+                </ul>
+            </li>
+            <li class='nav-item'>
+                <a href="#" class='nav-link navbar-toggler collapsed' data-toggle='collapse' data-target='#service' aria-expanded="false">
+                    <span class="far fa-service pl-1"></span>
+                    خدمات
+                </a>
+                <ul class='side-dropdown collapse navbar-collapse' id="service">
+                    <li><a href="">دسته بندی ها</a></li>
+                    <li><a href="#">سرویس ها</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="main ">
+        <div class="container text-right">
+            <!-- 
+                فرم جستجوی کاربران
+                <div class="search my-5">
+                <h2 class="mb-4">جستجوی کاربران</h2>
+                <form action="" class='form-group '>
+                    <div class=" m-auto">
+                        <input type="text" class="form-control px-2 ml-4 w-50 d-inline-block" placeholder="متن جستحو را وارد کنید">
+                        <select name="" id="" class="custom-select w-25 ml-4">
+                            <option value="none" selected>جستجو بر اساس</option>
+                            <option value="firstName">نام</option>
+                            <option value="lastName">نام خانوادگی</option>
+                            <option value="phone">شماره تلفن</option>
+                            <option value="email">ایمیل</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">جستجو</button>
+                    </div>
+                </form>
+            </div> -->
+            <hr>
+            <div>
+                <h3 class="my-2 mt-4">لیست کاربران</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>نام</th>
+                            <th>نام خانوادگی</th>
+                            <th>شماره تلفن</th>
+                            <th>ایمیل</th>
+                            <th>آدرس</th>
+                            <th>حذف کاربر</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope='row'>1</th>
+                            <td>mem</td>
+                            <td>fara</td>
+                            <td>9194553779</td>
+                            <td>memfar@gmail.com</td>
+                            <td>tehran</td>
+                            <td><button class="btn btn-danger">حذف کاربر</button></td>
+                        </tr>
+                        <tr>
+                            <th scope='row'>2</th>
+                            <td>mem</td>
+                            <td>fara</td>
+                            <td>9194553779</td>
+                            <td>memfar@gmail.com</td>
+                            <td>tehran</td>
+                            <td><button class="btn btn-danger">حذف کاربر</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

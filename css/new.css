@@ -1,0 +1,52 @@
+@font-face {
+    font-family: shabnam;
+    src: url('../shabnam-font/Shabnam-Light.eot');
+    src: url('../shabnam-font/Shabnam-Light.woff2') format('FontName-opentype'),
+            url('../shabnam-font/Shabnam.woff') format('woff'),
+            url('../shabnam-font/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: parasto;
+    src: url('../parastoo-font-v1.0.0-alpha5/web/Parastoo.eot');
+    src: url('../parastoo-font-v1.0.0-alpha5/web/Parastoo.woff2') format('FontName-opentype'),
+            url('../parastoo-font-v1.0.0-alpha5/web/Parastoo.woff') format('woff'),
+            url('../parastoo-font-v1.0.0-alpha5/web/Parastoo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Far.Abasan';
+    src:        url('https://www.fontfarsi.ir/Content/Fonts/EOT/Far_Abasan.eot');
+    src: local('☺'),
+    url('https://www.fontfarsi.ir/Content/Fonts/WOFF/Far_Abasan.woff') format('woff'),
+    url('https://www.fontfarsi.ir/Content/Fonts/TTF/Far_Abasan.ttf') format('truetype'),
+    url('https://www.fontfarsi.ir/Content/Fonts/SVG/Far_Abasan.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'sans';
+    src: local('☺'),
+    url('Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+a, a:hover{
+    text-decoration:none;
+    color: #fff;
+}
+
+ul , li {
+    list-style: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: IranianSans ,Arial, Helvetica, sans-serif;
+    direction: rtl;
+}

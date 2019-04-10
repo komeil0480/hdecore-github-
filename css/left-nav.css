@@ -1,0 +1,54 @@
+nav {
+    z-index: 1;
+}
+.vertical-nav {
+    width: 60px;
+    right: 0;
+}
+.navigation {
+    top: 20%;
+    height: 60%;
+}
+nav a {
+    display:inline-block;
+    padding: 5px;
+    padding: 5px;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    
+    transition: .5s;
+}
+
+.vertical-nav img {
+    /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(340deg); */
+    filter: invert(1);
+}
+
+/* کوچک کردن عکس لینک درباره ما و تماس با ما */
+
+#about-link {
+    padding: 5px;
+}
+
+#about-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#call-link {
+    padding: 5px;
+}
+
+#call-icon {
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width :767px) {
+    .vertical-nav {
+        display: none;
+    }
+}

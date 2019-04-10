@@ -1,0 +1,308 @@
+a { 
+    text-decoration: none;
+}
+body {
+    direction: rtl !important;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* container */
+
+.container {
+    width: 600px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* center div inside the container around all elements */
+.center {
+    width: 550px;
+    padding-bottom: 2rem;
+}
+
+/* header */
+.header-container {
+
+}
+.header {
+    font-weight: normal;
+}
+
+/* form inputs containter  */
+.tow-input {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+/* form inputs  */
+.input-div {
+    position: relative;
+    /* width: 80%; */
+}
+
+
+
+.input-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 0 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    background: none;
+    transition: .2s;
+}
+.input-text {
+    position: absolute;
+    z-index: -1;
+    right: 8px;
+    top: 5px;
+    padding: 0 12px;
+    color: #888;
+    transition: .2s;
+}
+
+.input-input:focus ~ .input-text {
+    top: -10px;
+    padding-top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: rgb(8, 119, 245);
+    z-index: 1;
+}
+
+.input-text-top {
+    top: -10px;
+    padding-top: 0;
+    font-size: 14px;
+    background: #fff;
+    /* color: rgb(8, 119, 245); */
+    z-index: 1;
+}
+
+.input-input-lightBlue {
+    border-color: rgb(8, 119, 245);
+}
+.input-text-lightBlue {
+    color: rgb(8, 119, 245);
+}
+
+.input-input:focus
+ {
+    border: 2px solid rgb(8, 119, 245);
+    color: rgb(83, 83, 83);
+}
+.input-input:focus ~ .input-text {
+    color: rgb(8, 119, 245);
+}
+
+/* Change the white to any color ;) */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+
+#input-email:focus {
+    width: 150% !important;
+}
+
+
+/* برای قرمز شدن اینپوت */
+.input-red {
+    border: 2px solid rgb(255, 17, 17);
+    box-shadow: 0 0 3px rgb(255, 17, 17);
+    color: rgb(255, 22, 22);
+}
+
+
+/* چشم که برای رمز عبور باز و بسته می شود */
+/* div around a tag */
+.eye {
+    /* position: relative; */
+}
+
+.pass-eye {
+    display: inline-block;
+    width: 25px !important;
+    height: 25px !important;
+    position: relative;
+    top: 50%;
+    /* right: 20px; */
+    transform: translateY(-50%);
+    opacity: .7;
+    transition: .2s;
+}
+
+ .pass-eye:hover  {
+    opacity: 1 !important;
+    transition-delay: 0 !important;
+}
+
+.pass-eye img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+/* نوشته ی زیر رمز عبور "از 8 کارکتر یا بیشتر استفاده کنید" */
+
+.password-details {
+    /* margin-top: 5px; */
+    font-size: 15px;
+}
+
+
+
+/* دکمه وارد شوید و دیو دور آن */
+
+.button-container {
+    margin-bottom: 1rem;
+    direction: ltr;
+}
+#sign-up {
+    background: rgb(0, 102, 218);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Yekan";
+    padding: 5px 15px;
+    /* margin-left: 3.5rem; */
+    margin-top: 1rem;
+    /* margin-right: 6.7rem; */
+    transition: .2s;
+    /* float: left; */
+}
+#sign-up:hover {
+    cursor: pointer;
+    background: rgb(36, 138, 255);
+}
+
+
+/* دیو به ایتفاع 1 پیکسل */
+.hr {
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(196, 196, 196);
+}
+
+/* برای قبلا ثبت نام کرده اید؟ */
+
+.login-show {
+    margin-top: 20px;
+}
+
+.login-show a{
+    color: rgb(8, 119, 245);
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.login-show a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 1px dashed rgb(8, 119, 245);
+    transition: .4s;
+}
+
+.login-show a:hover::before {
+    width: 100%;
+    right: 0;
+}
+
+/* utilities */
+
+.hdecor {
+    word-spacing: -8px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+hr {
+     width: 90%;
+ }
+.my-2 {
+    margin: 2rem 0;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mx-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+.ml-1 {
+    margin-left: 1rem;
+}
+.ml-2 {
+    margin-left: 2rem;
+}
+.ml-0-5 {
+    margin-left: .5rem; 
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-5 {
+    margin-top: 5rem;
+}
+.text-ltr {
+    direction: ltr;
+}
+.text-rtl {
+    direction: rtl;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+.p-none {
+    padding: none;
+}
+
+
+.w-100 {
+    width: 100% !important;
+}
+
